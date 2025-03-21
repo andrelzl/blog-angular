@@ -1,24 +1,23 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
+  imports: [],
   templateUrl: './big-card.component.html',
-  styleUrls: ['./big-card.component.css']
+  styleUrl: './big-card.component.css'
 })
 export class BigCardComponent implements OnInit {
 
   @Input()
-  photoCover:string =""
+  photoCover:string = ""
   @Input()
-  cardTitle:string= ""
+  cardTitle:string = ""
   @Input()
-  cardDescription:string =""
-  @Input()
-  Id:string="0"
+  cardDescription:string = ""
 
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }
